@@ -5,10 +5,12 @@ Jinja2==2.11.3
 Pillow==8.1.2
 torch==1.7.1
 torchvision==0.2.2
+https://download.pytorch.org/whl/cpu/torch-1.7.1%2Bcpu-cp37-cp37m-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torchvision-0.2.2%2Bcpu-cp37-cp37m-linux_x86_64.whl
 Keras==2.1.6
 Keras-Applications==1.0.
 Keras-Preprocessing==1.1.2
-tensorflow==2.5.0rc0
+tensorflow-cpu==2.5.0rc0
 numpy==1.19.3
 urllib3==1.26.3
 Werkzeug==1.0.1
