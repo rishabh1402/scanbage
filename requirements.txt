@@ -8,8 +8,11 @@ torchvision==0.8.2
 Keras==2.6.0
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
-tensorflow==2.6.0
-numpy==1.9.1
+tensorboard==2.6.0
+tensorboard-plugin-wit==1.8.0
+tensorflow-cpu==2.6.0
+tensorflow-estimator==2.6.0
+numpy==1.19.2
 urllib3==1.26.3
 Werkzeug==1.0.1
 wrapt==1.12.1
