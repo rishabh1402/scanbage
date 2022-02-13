@@ -1,8 +1,6 @@
 # Scanbage
 
-# Scanbage
 ## What it does
-- A Web App to sort your waste via scanning the uploaded images
 - Classifies the waste material in the image into 6 categories :
   1. Cardboard
   2. Glass
@@ -14,34 +12,16 @@
 - Tells the information on how much CO2 emission they avoided
 
 ## How to use
-* Click **Login** to start with a free account
-
-![homePageLogin](/Screenshots/homePageLogin.png)
-![loginPage](/Screenshots/loginPage.png)
-
-* Click **Explore** to start
-
-![homePageExplore](/Screenshots/homePageExplore.PNG)
-
-* **Choose** an image to be uploaded
-
-![uploadImage](/Screenshots/uploadImage.PNG)
-
-* **Upload** the file
-
-![uploadedPic](/Screenshots/uploadedPic.PNG)
-
-* Get the result within seconds with atmost accuracy
-
-![resultPage](/Screenshots/resultPage.jpeg)
+- Pre requisite: You should already have flask, tensflow and torchvision libraries installed
+- Steps:
+  1. Download the github zip file.
+  2. Extract the file.
+  3. Go to your terminal and change the directory to where you extracted the zip file.
+  4. Then type in, python app.py.
+  5. Follow the link provided by the terminal.    
+  6. Upload the desired image (preferably from the dataset-resized.zip)
 
 ## How was it built
 - Pre-Trained image detection model **DenseNet-121**
 - DenseNet-121 is pre-trained on **ImageNet** to distinguish 1000 classes of objects
 - Dataset is trained using **VGG16 Transfer Learning Technique** of CNN for the classification
-
-## Try the Web App :
-  https://scanbage.herokuapp.com/
-  
-## Model :
-  https://github.com/rishabh1402/scanbage
