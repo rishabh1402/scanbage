@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | Triangle</title>
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./static/css/animate.min.css" rel="stylesheet">
+    <link href="./static/css/lightbox.css" rel="stylesheet">
+    <link href="./static/css/login.css" rel="stylesheet">
+    <link href="./static/css/responsive.css" rel="stylesheet">
+    <style>
+        .bg-img{
+				width: 100%;
+				height: 90vh;
+				background-image:url('../images/backgr.png');
+				background-size: auto;
+				background-position: center;
+			}
+        .content {
+			  max-width: 500px;
+              margin-left: 500px;
+              margin-top: 0px;
+			  }
+        .index-main 
+            {
+                background-color: #ffff;
+                display: flex; 
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                
+            }	
+        .upload-section 
+            {
+               padding:5px;
+            }	
+            .btn.btn-success  
+            {
+                width:60%;
+                margin-left:20%;
+                margin-right:20%;
+            } 
+            @media (max-width:543px) {
+                .index-main 
+                {
+                    width:94%;
+                    margin-left: 3%; 
+                    margin-right: 3%; 
+                }
+            }
+            #output
+            {
+                width:200px;
+                height:200px; 
+                background-image: url('static/images/default.png');
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+
+            }
+    </style>
+
+</head>
+<!--/head-->
+
+<body>
+    <div class="bg-img">
+    <header id="header">        
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="./static/images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class=""><a href="">ABOUT</a></li>
+                        <li class=""><a href="blog.html">Blog </a></li>
+                        
+                        <li><a href="login.html">EXPLORE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+    <div class="content">
+        <div class = "index-main">
+
+            <div style = "width : 100%; padding-top : 5%;">
+                <div class = "header-content">
+                    <h1 style = "text-align: center;color: black"><span class="header-content-text">Please upload an image</span></h1>
+                </div>
+            </div>
+            <p><img id="output" width="200px"></p>
+            <div class="upload-section">
+                
+                <div class="upload-file">
+                    <form class = "file-form" action="/success" method="post", enctype="multipart/form-data">
+                        <input class="file-form-input" type="file" , name = "file" onchange="loadFile(event)"/> 
+                <br><br>
+                        <button class="btn btn-success btn-lg">Upload</button>
+            </form>
+                </div>
+                <div class = "header-content-sub">
+                        <p style = "text-align: center; margin-top: 15px;color: red" class="header-content-info">{{error}}</p>
+                </div>
+            </div>
+        </div>  
+   </div>
+  
+   
+
+    <footer id="footer">
+        
+    </footer>
+    <!--/#footer-->
+    <script>
+         var loadFile = function(event) {
+            document.getElementById('output').style.backgroundImage = "none";
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        function getResult(result){
+            result_box = document.getElementById('result');
+            result_box.innerHTML = result;
+            result_box.style.display = "block";
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+
+</body>
+
+</html>
