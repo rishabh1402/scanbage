@@ -9,7 +9,7 @@ torchvision==0.10.0+cpu
 Keras==2.1.6
 Keras-Applications==1.0.
 Keras-Preprocessing==1.1.2
-tensorflow-cpu==2.5.0rc0
+tensorflow-cpu==2.5.0
 numpy==1.19.3
 urllib3==1.26.3
 Werkzeug==1.0.1
