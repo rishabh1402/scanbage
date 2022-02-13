@@ -8,6 +8,9 @@ MarkupSafe==2.0.1
 numpy==1.19.3
 Pillow==8.2.0
 scipy==1.7.0
+Keras==2.1.6
+Keras-Applications==1.0.
+Keras-Preprocessing==1.1.2
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.1+cpu
 torchvision==0.8.2+cpu
