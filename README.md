@@ -1,5 +1,7 @@
 # Scanbage
 
+(D:/HTL/static/images/logo.png)
+
 ## What it does
 - Classifies the waste material in the image into 6 categories :
   1. Cardboard
