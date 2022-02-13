@@ -2,7 +2,7 @@ Flask==1.0.3
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
-Pillow==8.1.2
+Pillow==7.1.2
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.1+cpu
 torchvision==0.8.2+cpu
