@@ -1,8 +1,10 @@
-Flask==1.0.3
+Flask==1.1.2 
+Flask-JSGlue==0.3.1 
+Jinja2==2.11.3 
+Markdown==3.3.4 
+MarkupSafe==1.1.1 
+Pillow==6.2.0 
 gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.11.3
-Pillow==7.1.2
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.7.1+cpu
 torchvision==0.8.2+cpu
@@ -14,4 +16,5 @@ numpy==1.19.3
 urllib3==1.26.3
 Werkzeug==1.0.1
 wrapt==1.12.1
-scipy>=0.10
+scipy==1.7.0 
+MarkupSafe==2.0.1
