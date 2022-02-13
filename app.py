@@ -2,7 +2,6 @@ import os
 import uuid
 import flask
 import torchvision.transforms as transforms
-import urllib
 from PIL import Image
 import json
 from tensorflow.keras.models import load_model
@@ -11,10 +10,8 @@ from tensorflow.keras.preprocessing.image import load_img , img_to_array
 from utils import load_classes
 import io
 from torchvision import models
-import numpy as np
 from flask import Flask, jsonify, request, render_template, redirect
-from keras.applications.mobilenet import decode_predictions, preprocess_input
-import tensorflow as tf
+
 
 
 app = Flask(__name__)
