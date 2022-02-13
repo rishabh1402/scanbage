@@ -7,8 +7,8 @@ click==7.1.2
 Flask==1.0.3
 flatbuffers==1.12
 gast==0.4.0
-torch
-torchvision==0.2.1
+torch==1.6.0
+torchvision==0.7.0
 google-auth==1.27.1
 google-auth-oauthlib==0.4.3
 google-pasta==0.2.0
@@ -21,7 +21,6 @@ Keras-Preprocessing==1.1.2
 kiwisolver==1.3.1
 Markdown==3.3.4
 MarkupSafe==1.1.1
-numpy==1.16.4
 oauthlib==3.1.0
 opt-einsum==3.3.0
 Pillow==8.1.2
@@ -38,3 +37,4 @@ typing-extensions==3.7.4.3
 urllib3==1.26.3
 Werkzeug==1.0.1
 wrapt==1.12.1
+numpy==1.16.4
