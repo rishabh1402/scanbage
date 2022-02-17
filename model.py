@@ -60,6 +60,6 @@ def waste_prediction(new_image):
   print("Your waste material is ", predicted_value, " with ", predicted_accuracy, " % accuracy")
   
 
-waste_prediction("D:/Backyard Hack/dataset-resized/dataset-resized/glass/glass29.jpg")
+waste_prediction("dataset-resized/glass/glass29.jpg")
 
 model.save('model.hdf5')
